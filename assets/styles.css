@@ -11,6 +11,8 @@
 .btn {
     width: 100px;
 }
-.form-control {
+#form-control {
+    display: flex;
     height: 100px;
+    width: 60%;
 }
