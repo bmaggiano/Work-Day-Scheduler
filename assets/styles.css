@@ -1,0 +1,16 @@
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+.input-group-text {
+    display: flex;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+}
+.btn {
+    width: 100px;
+}
+.form-control {
+    height: 100px;
+}

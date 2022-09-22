@@ -1,12 +1,20 @@
 //need a function to show current date at the top of the screen
+const today = moment().format("MMMM Do, YYYY")
+const time = moment().format("LTS")
 
-//need time blocks for 8am-5pm
+$('#currentDay').text(today) 
+$('#currentTime').text(time)
+
+setInterval(() => 
+$('#currentTime').text(new Date().toLocaleTimeString()),1000);
+
+
+
 
 //timeblocks color is green if current time is less than calendar time
 //timeblocks color is red if current time is greater than calendar time
 //timeblocks color is oragne if current time is equal to current time block
 
-//timeblocks need to be textarea to input text
 
 //use append child to add button to each textarea
 //on click for button, be able to update/save the text the user enters into the text area
@@ -18,5 +26,4 @@
 
 
 
-//we can do this with js only or we can use HTML markup and run functions only in js
 
