@@ -1,8 +1,20 @@
-//need a function to show current date at the top of the screen
+
 const today = moment().format("MMMM Do, YYYY")
 const time = moment().format("LTS")
 const hourStr = moment().format("k")
 const hour = Number(hourStr) //convert string into number
+const button = document.getElementById('button')
+
+const formOne = document.getElementById("form-one")
+const formTwo = document.getElementById("form-two")
+const formThree = document.getElementById("form-three")
+const formFour = document.getElementById("form-four")
+const formFive = document.getElementById("form-five")
+const formSix = document.getElementById("form-six")
+const formSeven = document.getElementById("form-seven")
+const formEight = document.getElementById("form-eight")
+const formNine = document.getElementById("form-nine")
+const formTen = document.getElementById("form-ten")
 
 console.log(typeof(hour)) //hour is a string
 
@@ -13,6 +25,10 @@ $('#currentTime').text(time)
 setInterval(() => 
 $('#currentTime').text(new Date().toLocaleTimeString()),1000);
 
+
+//timeblocks color is red if stated hour is equal to current hour
+//timeblocks color is grey if current hour has already passed
+//timeblocks color is green if current hour has not yet happened
 if (hour === 8) {
     $('#time-one').attr("style", "background-color:red;")
     $('#form-one').attr("style", "background-color:red;")
@@ -115,13 +131,22 @@ if (hour === 17) {
 }
 
 
-//timeblocks color is green if current time is less than calendar time
-//timeblocks color is red if current time is greater than calendar time
-//timeblocks color is oragne if current time is equal to current time block
 
 
-//use append child to add button to each textarea
 //on click for button, be able to update/save the text the user enters into the text area
+button.addEventListener('click', function() {
+    localStorage.setItem("8am", formOne.value)
+    localStorage.setItem("9am", formTwo.value)
+    localStorage.setItem("10am", formThree.value)
+    localStorage.setItem("11am", formFour.value)
+    localStorage.setItem("12pm", formFive.value)
+    localStorage.setItem("1pm", formSix.value)
+    localStorage.setItem("2pm", formSeven.value)
+    localStorage.setItem("3pm", formEight.value)
+    localStorage.setItem("4pm", formNine.value)
+    localStorage.setItem("5pm", formTen.value)
+})
+
 //new text value should save in local storage localStorage.setItem()
 
 //when user refreshes the page the most recent saved changes persist
