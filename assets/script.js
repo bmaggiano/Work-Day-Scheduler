@@ -25,7 +25,7 @@ const formEight = document.getElementById("form-eight")
 const formNine = document.getElementById("form-nine")
 const formTen = document.getElementById("form-ten")
 
-console.log(typeof(hour)) //hour is a string
+// console.log(typeof(hour)) //hour is a string
 
 
 $('#currentDay').text(today) 
@@ -140,7 +140,6 @@ if (hour === 17) {
 }
 
 
-$('#form-one').attr("placeholder", localStorage.getItem("8am"))
 $('#form-one').text(localStorage.getItem("8am"))
 $('#form-two').text(localStorage.getItem("9am"))
 $('#form-three').text(localStorage.getItem("10am"))
@@ -153,7 +152,7 @@ $('#form-nine').text(localStorage.getItem("4pm"))
 $('#form-ten').text(localStorage.getItem("5pm"))
 
 
-//on click for button, be able to update/save the text the user enters into the text area
+// on click for button, be able to update/save the text the user enters into the text area
 btn1.addEventListener('click', function() {
     localStorage.setItem("8am", formOne.value)})
 btn2.addEventListener('click', function() {
@@ -183,10 +182,4 @@ btn9.addEventListener('click', function() {
 btn10.addEventListener('click', function() {
     localStorage.setItem("5pm", formTen.value)
 })
-
-
-
-
-
-
 
