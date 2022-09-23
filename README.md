@@ -10,6 +10,8 @@ This app is also the first instance of Bootstrap in my UofA portfolio and allowe
 
 ## Screenshot
 
+![image](https://user-images.githubusercontent.com/103971233/192011785-e583ee63-1f24-4a70-8bef-628f2d07a25c.png)
+
 ## Credits
 
 Using Bootstrap for UI, as well as Font Awesome & Google Fonts for some icons & specific font families. All links are in the index.html file.
