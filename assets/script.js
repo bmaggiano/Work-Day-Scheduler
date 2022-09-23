@@ -3,7 +3,16 @@ const today = moment().format("MMMM Do, YYYY")
 const time = moment().format("LTS")
 const hourStr = moment().format("k")
 const hour = Number(hourStr) //convert string into number
-const button = document.getElementById('button')
+const btn1 = document.getElementById('btn-one')
+const btn2 = document.getElementById('btn-two')
+const btn3 = document.getElementById('btn-three')
+const btn4 = document.getElementById('btn-four')
+const btn5 = document.getElementById('btn-five')
+const btn6 = document.getElementById('btn-six')
+const btn7 = document.getElementById('btn-seven')
+const btn8 = document.getElementById('btn-eight')
+const btn9 = document.getElementById('btn-nine')
+const btn10 = document.getElementById('btn-ten')
 
 const formOne = document.getElementById("form-one")
 const formTwo = document.getElementById("form-two")
@@ -131,25 +140,50 @@ if (hour === 17) {
 }
 
 
+$('#form-one').attr("placeholder", localStorage.getItem("8am"))
+$('#form-one').text(localStorage.getItem("8am"))
+$('#form-two').text(localStorage.getItem("9am"))
+$('#form-three').text(localStorage.getItem("10am"))
+$('#form-four').text(localStorage.getItem("11am"))
+$('#form-five').text(localStorage.getItem("12pm"))
+$('#form-six').text(localStorage.getItem("1pm"))
+$('#form-seven').text(localStorage.getItem("2pm"))
+$('#form-eight').text(localStorage.getItem("3pm"))
+$('#form-nine').text(localStorage.getItem("4pm"))
+$('#form-ten').text(localStorage.getItem("5pm"))
 
 
 //on click for button, be able to update/save the text the user enters into the text area
-button.addEventListener('click', function() {
-    localStorage.setItem("8am", formOne.value)
+btn1.addEventListener('click', function() {
+    localStorage.setItem("8am", formOne.value)})
+btn2.addEventListener('click', function() {
     localStorage.setItem("9am", formTwo.value)
+})
+btn3.addEventListener('click', function() {
     localStorage.setItem("10am", formThree.value)
+})
+btn4.addEventListener('click', function() {
     localStorage.setItem("11am", formFour.value)
+})
+btn5.addEventListener('click', function() {
     localStorage.setItem("12pm", formFive.value)
+})
+btn6.addEventListener('click', function() {
     localStorage.setItem("1pm", formSix.value)
+})
+btn7.addEventListener('click', function() {
     localStorage.setItem("2pm", formSeven.value)
+})
+btn8.addEventListener('click', function() {
     localStorage.setItem("3pm", formEight.value)
+})
+btn9.addEventListener('click', function() {
     localStorage.setItem("4pm", formNine.value)
+})
+btn10.addEventListener('click', function() {
     localStorage.setItem("5pm", formTen.value)
 })
 
-//new text value should save in local storage localStorage.setItem()
-
-//when user refreshes the page the most recent saved changes persist
 
 
 
