@@ -8,6 +8,8 @@ This app is also the first instance of Bootstrap in my UofA portfolio and allowe
 
 ## Link to deployed URL
 
+https://bmaggiano.github.io/Work-Day-Scheduler/
+
 ## Screenshot
 
 ![image](https://user-images.githubusercontent.com/103971233/192011785-e583ee63-1f24-4a70-8bef-628f2d07a25c.png)
